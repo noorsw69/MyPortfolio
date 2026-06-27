@@ -49,7 +49,7 @@ export default function Contact() {
         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center">
           <div className="flex items-center gap-6">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/noor-un-nisa-soomro-a12077263" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -75,7 +75,7 @@ export default function Contact() {
             </a>
 
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:noorunnisasoomro7@gmail.com"
               aria-label="Send Email"
               className="w-16 h-16 rounded-full border border-zinc-200 hover:border-violet-600 text-zinc-500 hover:text-violet-600 flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_20px_rgba(124,58,237,0.15)] transition-all duration-300 hover:-translate-y-1 bg-white"
             >

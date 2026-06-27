@@ -6,7 +6,7 @@ export default function Projects() {
     {
       id: 1,
       title: "EvOrganize",
-      description: "A comprehensive MERN-stack event management platform built as a Final Year Project. Features dynamic scheduling tools, client dashboards, and smooth data management for handling large-scale coordination workflows.",
+      description: "A full-stack web platform designed to streamline event scheduling, registration, and user dashboards. Engineered using the MERN stack (MongoDB, Express.js, React, and Node.js), it features a highly responsive frontend architecture, seamless client-side rendering, and intuitive tools for event management.",
       image: "/EvOrganize.png",
       liveLink: "#",
       mobile: false,
@@ -15,7 +15,7 @@ export default function Projects() {
     {
       id: 2,
       title: "E-Commerce Web Application",
-      description: "A modern shopping experience featuring dynamic cart flows, smooth interface handling, and secure, production-ready Firebase client authentication tracking.",
+      description: "A fully functional digital storefront featuring secure user authentication powered by Firebase, allowing users to safely sign up, log in, and save their profiles. The platform enables users to browse catalog products, manage a dynamic shopping cart, and navigate a seamless checkout workflow designed for effortless shopping.",
       image: "/Ecommerce.png",
       liveLink: "#",
       mobile: false,
@@ -24,7 +24,7 @@ export default function Projects() {
     {
       id: 3,
       title: "Unsplash Image Gallery",
-      description: "A high-performance image streaming application featuring integrated Unsplash REST API calls, dynamic pagination tracking, and a fluid responsive grid system.",
+      description: "A visually clean media platform that lets users browse, search, and organize high-resolution images. It features smooth grid transitions, instant category filtering, and an interactive light-box view for an immersive and fluid browsing experience.",
       image: "/Gallery.png",
       liveLink: "#",
       mobile: false,
@@ -33,7 +33,7 @@ export default function Projects() {
     {
       id: 4,
       title: "SmartHabitTracker",
-      description: "A cross-platform mobile app that securely saves user progress locally and automatically resets daily tasks at midnight to track streaks. Features a modern translucent UI with custom line-art backgrounds, smooth micro-interactions, an animated notification banner for real-time milestone alerts, and a synchronized dark and light theme engine.",
+      description: "A smart daily companion app designed to help users build and maintain healthy routines. It allows you to create customized habits, tracks your progress with automated daily streak counters, sends subtle reminders, and features an elegant, easy-to-read dashboard that helps you stay motivated and consistent.",
       image: "/smartHabitTracker.png",
       liveLink: "#",
       mobile: true,

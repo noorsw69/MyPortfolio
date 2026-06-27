@@ -23,7 +23,7 @@ export default function AboutPage() {
                 I am a passionate Software Engineer and Frontend Developer dedicated to crafting beautiful, high-performance, and user-centric web and mobile applications.
               </p>
               <p>
-                Holding a BE in Software Engineering from Mehran University of Engineering and Technology, I specialize in building clean, modern, and scalable interfaces using React.js, Next.js, and Tailwind CSS.
+                Holding a BE in Software Engineering from Mehran University of Engineering and Technology, I specialize in building clean, modern, and scalable interfaces using <strong>React.js, Next.js, React Native,</strong> and Tailwind CSS.
               </p>
               <p>
                 With a solid foundation in modern web architectures and clean coding practices, I thrive on turning complex design concepts into seamless pixel-perfect digital experiences that users love.
@@ -78,7 +78,7 @@ export default function AboutPage() {
                   </h3>
                   <div className="text-zinc-600 text-base sm:text-lg leading-relaxed max-w-2xl">
                     <p>Deepened expertise in React.js by building dynamic UI components and handling structured state management.</p>
-      <p>Delivered modular, scalable frontend solutions within an agile team environment.</p>
+                    <p>Delivered modular, scalable frontend solutions within an agile team environment.</p>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function AboutPage() {
                   </h3>
                   <div className="text-zinc-600 text-base sm:text-lg leading-relaxed max-w-2xl">
                     <p>Implemented responsive web layouts and optimized interface performance.</p>
-      <p>Leveraged semantic HTML, CSS, and modern JavaScript to refine user workflows and enhance visual layouts.</p>
+                    <p>Leveraged semantic HTML, CSS, and modern JavaScript to refine user workflows and enhance visual layouts.</p>
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
                     Summer Internship Program
                   </span>
                   <h3 className="text-3xl font-black text-zinc-900 tracking-tight mb-4">
-                   State Bank of Pakistan
+                    State Bank of Pakistan
                   </h3>
                   <div className="text-zinc-600 text-base sm:text-lg leading-relaxed space-y-4 max-w-2xl">
                     <p>Participated in professional training and collaborative tasks within a structured corporate environment, enhancing communication, teamwork, and problem-solving skills through practical exposure.</p>
