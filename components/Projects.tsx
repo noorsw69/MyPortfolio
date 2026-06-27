@@ -7,7 +7,7 @@ export default function Projects() {
       id: 1,
       title: "EvOrganize",
       description: "A full-stack web platform designed to streamline event scheduling, registration, and user dashboards. Engineered using the MERN stack (MongoDB, Express.js, React, and Node.js), it features a highly responsive frontend architecture, seamless client-side rendering, and intuitive tools for event management.",
-      image: "/EvOrganize.png",
+      image: "/EvOrganize.PNG",
       liveLink: "#",
       mobile: false,
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"]
