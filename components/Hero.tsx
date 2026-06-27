@@ -14,7 +14,7 @@ export default function Hero() {
           
           {/* Greeting */}
           <div className="text-lg sm:text-xl font-medium text-zinc-800 mb-3 flex items-center gap-2 select-none">
-            Hey, I'm Noor <span className="animate-bounce">👋</span>
+            Hey, I'm Noor un Nisa <span className="animate-bounce">👋</span>
           </div>
 
           {/* Main Large Title */}

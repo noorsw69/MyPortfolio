@@ -63,7 +63,7 @@ export default function Contact() {
             </a>
 
             <a 
-              href="https://github.com" 
+              href="https://github.com/noorsw69" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="GitHub"
