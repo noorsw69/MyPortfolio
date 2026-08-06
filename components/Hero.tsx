@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         {/* Right Column: Profile Image */}
-        <div className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 w-full mt-16 lg:mt-0">
+        <div className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 w-full mt-8 lg:mt-0">
           <div
             className="relative rounded-full border border-violet-300 flex items-center justify-center bg-transparent shrink-0"
             style={{ width: 'min(420px, 80vw)', height: 'min(420px, 80vw)' }}
