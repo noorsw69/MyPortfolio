@@ -13,9 +13,16 @@ export default function Hero() {
         <div className="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1 text-left">
           
           {/* Greeting */}
-          <div className="text-lg sm:text-xl font-medium text-zinc-800 mb-3 flex items-center gap-2 select-none">
-            Hey, I'm Noor un Nisa <span className="animate-bounce">👋</span>
-          </div>
+         <div className="text-lg sm:text-xl font-medium text-zinc-800 mb-3 flex items-center gap-2 select-none">
+  Hey, I'm{" "}
+  <span
+  className="font-extrabold text-xl sm:text-2xl text-zinc-900"
+  style={{ fontFamily: "var(--font-syne)" }}
+>
+    Noor un Nisa
+  </span>
+  <span className="animate-bounce">👋</span>
+</div>
 
           {/* Main Large Title */}
           <h1 
