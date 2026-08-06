@@ -6,36 +6,36 @@ export default function Projects() {
     {
       id: 1,
       title: "EvOrganize",
-      description: "A full-stack web platform designed to streamline event scheduling, registration, and user dashboards. Engineered using the MERN stack (MongoDB, Express.js, React, and Node.js), it features a highly responsive frontend architecture, seamless client-side rendering, and intuitive tools for event management.",
+      description: "A full-stack web platform designed to streamline event scheduling, registration, and user dashboards.University team project built using the MERN stack. Contributed to the frontend by developing responsive React components, implementing UI features, and collaborating on the event management platform.",
       image: "/EvOrganize.PNG",
-      liveLink: "#",
+      liveLink: "https://github.com/muhammadwaryal/Event-Management-Project.git",
       mobile: false,
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"]
     },
     {
       id: 2,
       title: "E-Commerce Web Application",
-      description: "A fully functional digital storefront featuring secure user authentication powered by Firebase, allowing users to safely sign up, log in, and save their profiles. The platform enables users to browse catalog products, manage a dynamic shopping cart, and navigate a seamless checkout workflow designed for effortless shopping.",
+      description: "A fully functional e-commerce web application featuring secure user authentication with Firebase. Users can browse products, manage a dynamic shopping cart, and enjoy a seamless shopping experience through a responsive and intuitive interface.",
       image: "/Ecommerce.png",
-      liveLink: "#",
+      liveLink: "https://github.com/noorsw69/interneeProject7.git",
       mobile: false,
       tags: ["React.js", "Firebase Auth", "Tailwind CSS", "JavaScript"]
     },
     {
       id: 3,
       title: "Unsplash Image Gallery",
-      description: "A visually clean media platform that lets users browse, search, and organize high-resolution images. It features smooth grid transitions, instant category filtering, and an interactive light-box view for an immersive and fluid browsing experience.",
+      description: "A responsive image gallery application powered by the Unsplash API that allows users to browse, search, and explore high-resolution images. Features include instant search, category filtering, and an interactive lightbox for an engaging browsing experience.",
       image: "/Gallery.png",
-      liveLink: "#",
+      liveLink: "https://github.com/noorsw69/interneeProject4.git",
       mobile: false,
       tags: ["React.js", "Unsplash API", "Tailwind CSS", "JavaScript"]
     },
     {
       id: 4,
       title: "SmartHabitTracker",
-      description: "A smart daily companion app designed to help users build and maintain healthy routines. It allows you to create customized habits, tracks your progress with automated daily streak counters, sends subtle reminders, and features an elegant, easy-to-read dashboard that helps you stay motivated and consistent.",
+      description: "A cross-platform mobile application built with React Native and TypeScript to help users build consistent habits. Features include habit creation, daily streak tracking, local data persistence with AsyncStorage, and a clean dashboard for monitoring progress.",
       image: "/smartHabitTracker.png",
-      liveLink: "#",
+      liveLink: "https://github.com/noorsw69/SmartHabitTracker.git",
       mobile: true,
       tags: ["React Native", "TypeScript", "Expo", "AsyncStorage"]
     }
