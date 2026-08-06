@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="h-screen w-full flex items-center justify-center bg-white text-zinc-900 px-6 sm:px-16 pt-8 relative"
+      className="h-screen w-full flex items-center justify-center bg-white text-zinc-900 px-6 sm:px-16 pt-24 md:pt-8 relative"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full max-w-7xl mx-auto overflow-hidden">
         
