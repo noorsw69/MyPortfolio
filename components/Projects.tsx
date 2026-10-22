@@ -1,128 +1,205 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Projects() {
-  const projectData = [
-    {
-      id: 1,
-      title: "EvOrganize",
-      description: "A full-stack web platform designed to streamline event scheduling, registration, and user dashboards.University team project built using the MERN stack. Contributed to the frontend by developing responsive React components, implementing UI features, and collaborating on the event management platform.",
-      image: "/EvOrganize.PNG",
-      liveLink: "https://github.com/muhammadwaryal/Event-Management-Project.git",
-      mobile: false,
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"]
-    },
-    {
-      id: 2,
-      title: "E-Commerce Web Application",
-      description: "A fully functional e-commerce web application featuring secure user authentication with Firebase. Users can browse products, manage a dynamic shopping cart, and enjoy a seamless shopping experience through a responsive and intuitive interface.",
-      image: "/Ecommerce.png",
-      liveLink: "https://github.com/noorsw69/interneeProject7.git",
-      mobile: false,
-      tags: ["React.js", "Firebase Auth", "Tailwind CSS", "JavaScript"]
-    },
-    {
-      id: 3,
-      title: "Unsplash Image Gallery",
-      description: "A responsive image gallery application powered by the Unsplash API that allows users to browse, search, and explore high-resolution images. Features include instant search, category filtering, and an interactive lightbox for an engaging browsing experience.",
-      image: "/Gallery.png",
-      liveLink: "https://github.com/noorsw69/interneeProject4.git",
-      mobile: false,
-      tags: ["React.js", "Unsplash API", "Tailwind CSS", "JavaScript"]
-    },
-    {
-      id: 4,
-      title: "SmartHabitTracker",
-      description: "A cross-platform mobile application built with React Native and TypeScript to help users build consistent habits. Features include habit creation, daily streak tracking, local data persistence with AsyncStorage, and a clean dashboard for monitoring progress.",
-      image: "/smartHabitTracker.png",
-      liveLink: "https://github.com/noorsw69/SmartHabitTracker.git",
-      mobile: true,
-      tags: ["React Native", "TypeScript", "Expo", "AsyncStorage"]
-    }
-  ];
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  liveLink: string;
+  mobile: boolean;
+  tags: string[];
+};
+
+type ProjectsProps = {
+  featuredOnly?: boolean;
+};
+
+const projectData: Project[] = [
+  {
+    id: 1,
+    title: 'AI Resume & Job Match Analyzer',
+    description:
+      'An AI-powered application that analyzes resumes against job descriptions, identifies matched and missing skills, calculates a match score, and generates personalized improvement suggestions and interview questions.',
+    image: '/Resume-Analyzer.png',
+    liveLink: 'https://github.com/noorsw69/AI-Resume-Analyzer.git',
+    mobile: false,
+    tags: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'Gemini API'],
+  },
+  {
+    id: 2,
+    title: 'Cybersecurity Log Analyzer',
+    description:
+      'A cybersecurity dashboard that analyzes uploaded log files, identifies suspicious login activity, and presents analysis reports with saved history and AI-generated security insights.',
+    image: '/CyberAnalyzer.png',
+    liveLink: 'https://github.com/noorsw69/Cybersecurity-Log-Analyzer.git',
+    mobile: false,
+    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+  },
+  {
+    id: 3,
+    title: 'EvOrganize',
+    description:
+      'A university team project built using the MERN stack to streamline event scheduling, registration, and user dashboards. Contributed to the frontend by developing responsive React components and implementing interface features.',
+    image: '/EvOrganize.PNG',
+    liveLink: 'https://github.com/muhammadwaryal/Event-Management-Project.git',
+    mobile: false,
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS'],
+  },
+  {
+    id: 4,
+    title: 'E-Commerce Web Application',
+    description:
+      'A responsive e-commerce application featuring Firebase authentication, product browsing, product details, a dynamic shopping cart, checkout, and purchase history.',
+    image: '/Ecommerce.png',
+    liveLink: 'https://github.com/noorsw69/interneeProject7.git',
+    mobile: false,
+    tags: ['Next.js', 'Firebase Auth', 'Firestore', 'Tailwind CSS'],
+  },
+  {
+    id: 5,
+    title: 'Unsplash Image Gallery',
+    description:
+      'A responsive image gallery powered by the Unsplash API, featuring image search, category filtering, and an interactive lightbox for exploring high-resolution photography.',
+    image: '/Gallery.png',
+    liveLink: 'https://github.com/noorsw69/interneeProject4.git',
+    mobile: false,
+    tags: ['React.js', 'Unsplash API', 'Tailwind CSS', 'JavaScript'],
+  },
+  {
+    id: 6,
+    title: 'SmartHabitTracker',
+    description:
+      'A cross-platform mobile application built with React Native and TypeScript, featuring habit creation, daily streak tracking, and local data persistence with AsyncStorage.',
+    image: '/smartHabitTracker.png',
+    liveLink: 'https://github.com/noorsw69/SmartHabitTracker.git',
+    mobile: true,
+    tags: ['React Native', 'TypeScript', 'Expo', 'AsyncStorage'],
+  },
+];
+
+export default function Projects({
+  featuredOnly = false,
+}: ProjectsProps) {
+  const displayedProjects = featuredOnly
+    ? projectData.slice(0, 3)
+    : projectData;
 
   return (
-    <section id="projects" className="py-24 bg-white text-zinc-900 px-6 sm:px-16 max-w-7xl mx-auto w-full">
-      
-      {/* Dynamic Header */}
-      <h2 className="text-5xl font-extrabold tracking-tight mb-16 text-zinc-900">
-        Projects<span className="text-violet-600">.</span>
-      </h2>
+    <section
+      id="projects"
+      className="w-full bg-white px-6 py-16 text-zinc-900 sm:px-16 sm:py-24"
+    >
+      <div className="mx-auto w-full max-w-7xl">
+        <h2 className="mb-12 text-4xl font-extrabold tracking-tight text-zinc-900 sm:mb-16 sm:text-5xl">
+          Projects<span className="text-violet-600">.</span>
+        </h2>
 
-      {/* Two-Column Layout Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
-        {projectData.map((project) => (
-          <div key={project.id} className="flex flex-col group cursor-pointer">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-2">
+          {displayedProjects.map((project) => (
+            <article key={project.id} className="group flex flex-col">
+              {project.mobile ? (
+                <div className="mb-6 flex justify-center">
+                  <div className="relative h-[440px] w-[220px] overflow-hidden rounded-[2.5rem] border-[6px] border-zinc-800 bg-zinc-900 shadow-xl">
+                    <div className="absolute left-1/2 top-0 z-10 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-zinc-900" />
 
-            {project.mobile ? (
-              /* Phone Mockup Frame */
-              <div className="flex justify-center mb-6">
-                <div className="relative w-[220px] h-[440px] bg-zinc-900 rounded-[2.5rem] border-[6px] border-zinc-800 shadow-xl overflow-hidden">
-                  
-                  {/* Top Notch */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-zinc-900 rounded-b-2xl z-10" />
-                  
-                  {/* Screen */}
-                  <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
-                    <Image
-                      src={project.image}
-                      alt={`${project.title} screenshot`}
-                      fill
-                      sizes="220px"
-                      className="object-cover object-top"
-                    />
+                    <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} screenshot`}
+                        fill
+                        sizes="220px"
+                        className="object-cover object-top"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-1/2 z-10 h-1 w-16 -translate-x-1/2 rounded-full bg-zinc-600" />
                   </div>
-
-                  {/* Bottom Bar */}
-                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-zinc-600 rounded-full z-10" />
                 </div>
-              </div>
-            ) : (
-              /* Regular Web Project Image */
-              <div className="aspect-[16/10] w-full bg-zinc-100 rounded-[2rem] overflow-hidden border border-zinc-200 shadow-sm relative mb-6 transition-all duration-300 group-hover:shadow-md group-hover:border-zinc-300">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} screenshot`}
-                  fill
-                  sizes="(max-w-7xl) 50vw, 100vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  priority={project.id === 1}
-                />
-              </div>
-            )}
+              ) : (
+                <div className="relative mb-6 aspect-[16/10] w-full overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100 shadow-sm transition-all duration-300 group-hover:border-zinc-300 group-hover:shadow-md">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} screenshot`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={featuredOnly && project.id === 1}
+                  />
+                </div>
+              )}
 
-            {/* Project Details Title Layer */}
-            <a 
-              href={project.liveLink} 
-              className="inline-flex items-center gap-2 text-2xl font-bold text-zinc-950 mb-3 tracking-tight group-hover:text-violet-600 transition-colors"
-            >
-              {project.title}
-              {/* SVG Modern Inline Arrow Circle */}
-              <span className="inline-flex items-center justify-center w-7 h-7 rounded-full border border-violet-600 text-violet-600 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </span>
-            </a>
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-3 inline-flex w-fit items-center gap-2 text-2xl font-bold tracking-tight text-zinc-950 transition-colors hover:text-violet-600"
+              >
+                {project.title}
 
-            {/* Description Paragraph */}
-            <p className="text-zinc-800 font-normal text-base leading-relaxed max-w-xl mb-4">
-              {project.description}
-            </p>
-
-            {/* Tech Stack Badges */}
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag, idx) => (
-                <span key={idx} className="text-xs font-medium bg-zinc-100 text-zinc-600 px-3 py-1 rounded-md">
-                  {tag}
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-violet-600 text-violet-600 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
                 </span>
-              ))}
-            </div>
+              </a>
 
+              <p className="mb-4 max-w-xl text-base font-normal leading-relaxed text-zinc-700">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-md bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {featuredOnly && (
+          <div className="mt-14 flex justify-center">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full border border-violet-600 px-6 py-3 font-semibold text-violet-600 transition-colors hover:bg-violet-600 hover:text-white"
+            >
+              View All Projects
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </Link>
           </div>
-        ))}
+        )}
       </div>
     </section>
-  );
-}
+  );}

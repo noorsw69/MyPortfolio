@@ -14,9 +14,9 @@ export default function Home() {
       <div className="w-full relative">
         <Hero />
       </div>
-      <div id="projects" className="pt-24 clear-both block w-full bg-white">
-        <Projects />
-      </div>
+      <div className="pt-24 clear-both block w-full bg-white">
+  <Projects featuredOnly />
+</div>
 
       <AboutSummary /> 
       <Skills />
