@@ -31,8 +31,18 @@ My personal portfolio website to showcase my skills, projects, education, and ex
 1. Clone the repo
 ```bash
 git clone https://github.com/noorsw69/MyPortfolio.git
-
+```
 2. Go into the project folder
 
 ```bash
 cd MyPortfolio
+```
+3. Install dependencies
+ ```bash
+npm install
+```
+4. start the project
+ ```bash
+npm run dev
+
+
