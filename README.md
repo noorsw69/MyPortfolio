@@ -32,6 +32,5 @@ My personal portfolio website to showcase my skills, projects, education, and ex
 ```bash
 git clone https://github.com/noorsw69/MyPortfolio.git
 
-npm install
-
-npm run dev
+2. Go into the project folder
+cd MyPortfolio
