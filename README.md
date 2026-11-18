@@ -30,4 +30,12 @@ My personal portfolio website to showcase my skills, projects, education, and ex
 ## How to Run Locally
 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git clone https://github.com/noorsw69/MyPortfolio.git
+
+2. install dependicies
+```bash
+npm install
+
+3.Start the project
+```bash
+npm run dev
