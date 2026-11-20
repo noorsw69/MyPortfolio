@@ -9,7 +9,7 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  liveLink: string;
+  liveLink?: string;
   mobile: boolean;
   tags: string[];
 };
@@ -79,6 +79,37 @@ const projectData: Project[] = [
     mobile: true,
     tags: ['React Native', 'TypeScript', 'Expo', 'AsyncStorage'],
   },
+  {
+    id: 7,
+    title: 'COVID-19 Data Analysis – Aga Khan University Hospital',
+    description:
+      'A team-based data analysis project focused on COVID-19 patient data from Aga Khan University Hospital. The project involved descriptive, diagnostic, predictive and prescriptive analysis to examine patient data, identify patterns, explore trends and derive insights to support informed decision-making.',
+    image: '/covid-data-analysis.svg',
+    mobile: false,
+    tags: [
+      'Data Analysis',
+      'Descriptive Analysis',
+      'Diagnostic Analysis',
+      'Predictive Analysis',
+      'Prescriptive Analysis',
+    ],
+  },
+  {
+    id: 8,
+    title: 'Smartphone Addiction and Academic Performance Research',
+    description:
+      'A questionnaire-based research project investigating the relationship between smartphone addiction and academic performance among students. Data was collected through Google Forms, cleaned and organized using Microsoft Excel, and analyzed using SPSS. The project involved examining collected responses, identifying patterns and presenting findings through charts and visualizations.',
+    image: '/smartphone-addiction-research.svg',
+    mobile: false,
+    tags: [
+      'Google Forms',
+      'Microsoft Excel',
+      'SPSS',
+      'Data Cleaning',
+      'Statistical Analysis',
+      'Data Visualization',
+    ],
+  },
 ];
 
 export default function Projects({
@@ -109,7 +140,7 @@ export default function Projects({
                     <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
                       <Image
                         src={project.image}
-                        alt={`${project.title} screenshot`}
+                        alt={`${project.title} project illustration`}
                         fill
                         sizes="220px"
                         className="object-cover object-top"
@@ -123,7 +154,7 @@ export default function Projects({
                 <div className="relative mb-6 aspect-[16/10] w-full overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100 shadow-sm transition-all duration-300 group-hover:border-zinc-300 group-hover:shadow-md">
                   <Image
                     src={project.image}
-                    alt={`${project.title} screenshot`}
+                    alt={`${project.title} project illustration`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -132,31 +163,37 @@ export default function Projects({
                 </div>
               )}
 
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mb-3 inline-flex w-fit items-center gap-2 text-2xl font-bold tracking-tight text-zinc-950 transition-colors hover:text-violet-600"
-              >
-                {project.title}
+              {project.liveLink ? (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-3 inline-flex w-fit items-center gap-2 text-2xl font-bold tracking-tight text-zinc-950 transition-colors hover:text-violet-600"
+                >
+                  {project.title}
 
-                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-violet-600 text-violet-600 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7" />
-                    <polyline points="7 7 17 7 17 17" />
-                  </svg>
-                </span>
-              </a>
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-violet-600 text-violet-600 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <line x1="7" y1="17" x2="17" y2="7" />
+                      <polyline points="7 7 17 7 17 17" />
+                    </svg>
+                  </span>
+                </a>
+              ) : (
+                <h3 className="mb-3 w-fit text-2xl font-bold tracking-tight text-zinc-950">
+                  {project.title}
+                </h3>
+              )}
 
               <p className="mb-4 max-w-xl text-base font-normal leading-relaxed text-zinc-700">
                 {project.description}

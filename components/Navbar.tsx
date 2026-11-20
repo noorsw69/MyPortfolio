@@ -20,6 +20,7 @@ export default function Navbar() {
           <Link href="/" className="text-zinc-900 hover:text-violet-600 transition-colors">Home</Link>
           <Link href="/projects" className="text-zinc-900 hover:text-violet-600 transition-colors">Projects</Link>
           <Link href="/about" className="text-zinc-900 hover:text-violet-600 transition-colors">About</Link>
+          <Link href="/education" className="text-zinc-900 hover:text-violet-600 transition-colors">Education</Link>
           <Link href="/skills" className="text-zinc-900 hover:text-violet-600 transition-colors">Skills</Link>
         </div>
 
@@ -55,6 +56,7 @@ export default function Navbar() {
           <Link href="/" onClick={() => setIsOpen(false)} className="text-lg font-bold text-zinc-900 hover:text-violet-600 transition-colors">Home</Link>
           <Link href="/projects" onClick={() => setIsOpen(false)} className="text-lg font-bold text-zinc-900 hover:text-violet-600 transition-colors">Projects</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="text-lg font-bold text-zinc-900 hover:text-violet-600 transition-colors">About</Link>
+          <Link href="/education" onClick={() => setIsOpen(false)} className="text-lg font-bold text-zinc-900 hover:text-violet-600 transition-colors">Education</Link>
           <Link href="/skills" onClick={() => setIsOpen(false)} className="text-lg font-bold text-zinc-900 hover:text-violet-600 transition-colors">Skills</Link>
         </div>
       )}

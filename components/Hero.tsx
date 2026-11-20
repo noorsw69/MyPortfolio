@@ -26,19 +26,19 @@ export default function Hero() {
 
           {/* Main Large Title */}
           <h1 
-            className="text-6xl sm:text-7xl md:text-[5.5rem] tracking-[-0.04em] text-zinc-900 flex flex-col mb-5 select-none"
+            className="text-6xl sm:text-7xl md:text-[5.125rem] tracking-[-0.04em] text-zinc-900 flex flex-col mb-5 select-none"
             style={{ fontFamily: 'var(--font-syne)' }}
           >
-            <span className="leading-[1.05]">
-              <span className="text-violet-600 font-black">Front</span>
-              <span className="text-zinc-900 font-extrabold">end</span>
+            <span className="leading-[1]">
+              <span className="text-violet-600 font-black">Software</span>
             </span>
-            <span className="text-zinc-900 font-black leading-[1.05]">Developer</span>
+            <span className="text-zinc-900 font-black leading-[1]">Engineering</span>
+            <span className="text-zinc-900 font-black leading-[1]">Graduate</span>
           </h1>
 
           {/* Intro Description */}
           <p className="text-base sm:text-lg text-zinc-800 max-w-xl mb-8 font-normal leading-relaxed tracking-tight">
-            I'm a frontend developer based in Pakistan. I'll help you build beautiful websites your users will love.
+            Exploring technology, data, and innovative solutions.
           </p>
 
           {/* Action Buttons */}

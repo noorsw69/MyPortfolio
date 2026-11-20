@@ -20,13 +20,13 @@ export default function AboutPage() {
             <div className="w-1.5 bg-violet-600 rounded-full flex-shrink-0 self-stretch" />
             <div className="text-lg sm:text-xl text-zinc-700 font-medium leading-relaxed space-y-4">
               <p>
-                I am a passionate Software Engineer and Frontend Developer dedicated to crafting beautiful, high-performance, and user-centric web and mobile applications.
+                I am a Software Engineering graduate from Mehran University of Engineering and Technology (MUET), with an interest in exploring technology and developing practical solutions through software and data.
               </p>
               <p>
-                Holding a BE in Software Engineering from Mehran University of Engineering and Technology, I specialize in building clean, modern, and scalable interfaces using <strong>React.js, Next.js, React Native,</strong> and Tailwind CSS.
+                My academic background and project experience have helped me build a foundation in software development, data analysis, and modern technologies. I have worked with technologies such as React.js, Next.js, Node.js, and Tailwind CSS while exploring areas including artificial intelligence and cybersecurity.
               </p>
               <p>
-                With a solid foundation in modern web architectures and clean coding practices, I thrive on turning complex design concepts into seamless pixel-perfect digital experiences that users love.
+                I enjoy learning new technologies, working through technical challenges, and expanding my knowledge across different areas of computing. I am eager to continue developing my skills and apply what I learn to meaningful projects and future opportunities.
               </p>
             </div>
           </div>

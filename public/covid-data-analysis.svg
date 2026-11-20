@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#FAFAFF"/><stop offset="1" stop-color="#F1EEFF"/></linearGradient>
+    <linearGradient id="panel" x1="350" y1="180" x2="1250" y2="820" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#FBFAFF"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="42" fill="url(#bg)"/>
+  <circle cx="1340" cy="170" r="220" fill="#E8E1FF" opacity=".55"/><circle cx="225" cy="825" r="190" fill="#E5F4F1" opacity=".7"/>
+  <rect x="270" y="150" width="1060" height="700" rx="36" fill="url(#panel)" stroke="#E7E3F1" stroke-width="4"/>
+  <rect x="330" y="215" width="220" height="560" rx="24" fill="#F7F5FC"/>
+  <circle cx="440" cy="300" r="48" fill="#E6E0FF"/><path d="M440 272v56m-28-28h56" stroke="#7557D9" stroke-width="12" stroke-linecap="round"/>
+  <rect x="375" y="390" width="130" height="16" rx="8" fill="#D5CFF0"/><rect x="375" y="435" width="95" height="16" rx="8" fill="#E2DEEF"/><rect x="375" y="500" width="130" height="100" rx="18" fill="#EAE5FF"/>
+  <path d="M400 570l26-34 24 18 33-38" stroke="#7557D9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="450" cy="670" r="28" fill="#DDF1EC"/><path d="M437 670h26m-13-13v26" stroke="#388C7A" stroke-width="7" stroke-linecap="round"/>
+  <rect x="600" y="215" width="670" height="180" rx="24" fill="#fff" stroke="#ECE9F3" stroke-width="3"/>
+  <text x="645" y="275" fill="#312B45" font-family="Arial,sans-serif" font-size="30" font-weight="700">Healthcare data insights</text><text x="645" y="320" fill="#817B91" font-family="Arial,sans-serif" font-size="20">Illustrative analytics overview</text>
+  <path d="M650 355h560" stroke="#EEEAF5" stroke-width="3"/><circle cx="690" cy="355" r="8" fill="#8064DE"/><circle cx="780" cy="355" r="8" fill="#8064DE"/><circle cx="870" cy="355" r="8" fill="#8064DE"/>
+  <rect x="600" y="430" width="410" height="345" rx="24" fill="#fff" stroke="#ECE9F3" stroke-width="3"/><text x="640" y="485" fill="#312B45" font-family="Arial,sans-serif" font-size="25" font-weight="700">Patient trends</text>
+  <path d="M650 710V540M650 710h310" stroke="#D9D5E3" stroke-width="3"/><path d="M670 680l58-42 58 18 60-83 58 23 58-82" stroke="#8064DE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><circle cx="904" cy="514" r="10" fill="#8064DE"/>
+  <path d="M675 740h245" stroke="#F0EDF5" stroke-width="12" stroke-linecap="round"/>
+  <rect x="1045" y="430" width="225" height="345" rx="24" fill="#fff" stroke="#ECE9F3" stroke-width="3"/><text x="1080" y="485" fill="#312B45" font-family="Arial,sans-serif" font-size="23" font-weight="700">Care insights</text>
+  <circle cx="1158" cy="610" r="78" stroke="#E9E4F6" stroke-width="28"/><path d="M1158 532a78 78 0 0 1 75 99" stroke="#8064DE" stroke-width="28" stroke-linecap="round"/><path d="M1110 690h96" stroke="#D8D2E8" stroke-width="12" stroke-linecap="round"/><path d="M1134 724h48" stroke="#E7E3EF" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#8064DE"><circle cx="210" cy="240" r="12"/><circle cx="1410" cy="700" r="10"/><circle cx="1370" cy="760" r="7"/></g>
+</svg>
